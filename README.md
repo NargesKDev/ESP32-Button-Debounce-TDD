@@ -2,6 +2,17 @@
 
 This project implements a debounced push button module for the ESP32 using Test-Driven Development (TDD) and hardware timer interrupts. It is built with PlatformIO inside WSL (Windows Subsystem for Linux) and developed in Visual Studio Code.
 
+## Pushbutton and GPIO Pin Connection
+
+The pushbutton is connected to GPIO pin 34 of the ESP32. The connection setup is as follows:
+
+- One side of the pushbutton is connected to **ground (GND)**.
+- The other side of the pushbutton is connected to **GPIO pin 34** on the ESP32.
+
+The internal pull-up resistor is enabled on GPIO pin 34, so when the button is **released**, the state will read as `HIGH`. When the button is **pressed**, it will pull the GPIO pin to **LOW**, signaling a button press.
+
+This setup allows for proper detection of the button's debounced state, including the detection of rising and falling edges.
+
 ## Features
 
 - TDD with dual targeting (host and embedded)
@@ -10,7 +21,6 @@ This project implements a debounced push button module for the ESP32 using Test-
 - Detects and reports RISING and FALLING edges
 - Uses internal pull-up on GPIO 34 (button input)
 
-## Project Structure
 ## Project Structure
 
 ```
