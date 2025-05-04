@@ -54,4 +54,29 @@ After that, try uploading again:
 
 If you're using a USB-UART chip with different port name (e.g., `/dev/ttyUSB1` or `/dev/ttyACM0`), adjust the path accordingly.
 
+## Build and Test with Make
+
+You can use the provided `make` file for building and testing the project from the command line.
+
+- Run the default build:
+  ```
+  make
+  ```
+
+- Run tests and see output:
+  ```
+  make check
+  ```
+
+- Generate coverage reports using `gcovr` to check how much of `button.cpp` is covered by your tests:
+  ```
+  gcovr -r . --html --html-details -o coverage.html
+  ```
+
+Make sure `gcovr` is installed:
+```
+pip install gcovr
+```
+
+
 
