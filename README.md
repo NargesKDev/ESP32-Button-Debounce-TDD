@@ -78,6 +78,6 @@ Make sure `gcovr` is installed:
 pip install gcovr
 ```
 
-<img src="button.jpg" width="300" />
+<img src="button.jpg" width="500" />
 
 
