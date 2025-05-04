@@ -11,8 +11,10 @@ This project implements a debounced push button module for the ESP32 using Test-
 - Uses internal pull-up on GPIO 34 (button input)
 
 ## Project Structure
+## Project Structure
+
+```
 project-root/
-│
 ├── include/
 │   └── bsp.h
 ├── lib/
@@ -22,11 +24,13 @@ project-root/
 ├── src/
 │   └── main.cpp
 ├── test/
-│   └── test_button.cpp
-│  └── bsp.cpp
-│    └── bsp.h
+│   ├── test_button.cpp
+│   ├── bsp.cpp
+│   └── bsp.h
 ├── platformio.ini
-├── make
+└── make
+```
+
 
 ## Tools & Environment
 - PlatformIO in WSL (Ubuntu)
