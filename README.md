@@ -78,5 +78,6 @@ Make sure `gcovr` is installed:
 pip install gcovr
 ```
 
+![Button Module](./button.jpg){:height="250px" width="250px"}
 
 
